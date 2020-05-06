@@ -31,6 +31,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.util.*;
 
+
 /**
  * Resource for managing users
  */
@@ -51,7 +52,7 @@ public class UserResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getDefaultMessage() {
-        return Response.ok(Map.of("OK", true)).build();
+        return Response.ok("OK").build();
     }
 
     @Path("/{id}")
@@ -110,7 +111,7 @@ public class UserResource {
                     );
 
             return Response.status(422)
-                    .entity(Map.of( "validationErrors", errors ))
+                    .entity(errors )
                     .build();
         }
 

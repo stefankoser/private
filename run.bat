@@ -1,0 +1,3 @@
+REM java -Doracle.net.wallet_location=C:/atpspectra  -Doracle.net.authentication_services="(TCPS)" -Doracle.net.tns_admin=C:/atpspectra -Djavax.net.ssl.trustStore=C:/atpspectra/cwallet.sso -Djavax.net.ssl.trustStoreType=SSO  -Djavax.net.ssl.keyStore=C:/atpspectra/cwallet.sso -Djavax.net.ssl.keyStoreType=SSO -Doracle.net.ssl_server_dn_match=true -Doracle.net.ssl_version="1.2" -Ddatasource.username=usersvc -Ddatasource.password=ATeam2006_# -Ddatasource.url=jdbc:oracle:thin:@129.213.129.218_1521:pdb1.sub03311042260.spectradbvcn.oraclevcn.com -jar target/user-svc.jar
+
+java -Ddatasource.username=usersvc -Ddatasource.password=ATeam2006_# -Ddatasource.url=jdbc:oracle:thin:@129.213.129.218:1521/pdb1.sub03311042260.spectradbvcn.oraclevcn.com -jar target/user-svc.jar
