@@ -245,4 +245,4 @@ kubectl cluster-info                         # Verify which cluster
 kubectl get pods                             # Verify connectivity to cluster
 kubectl create -f app.yaml               # Deploy application
 kubectl get service user-svc  # Verify deployed service
-```
+```"# private" 
